@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <link rel="icon" href="img/ICONO.jfif">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+</head>
+    
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="index.html">FISIKMASTER</a>
+            <input type="checkbox" id="check">
+            <label class="mostrar-menu" for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="Sobre%20somos.html">Sobre Nosotros</a>
+            </nav>
+        </header>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+        
+    <main class="main">
+        <h1 class="titulo">¿QUIENES SOMOS?</h1>
+        <br>
+        <div class="team-members-container">
+            
+        <div class="team-member cesar">
+            <img src="img/Icons%20User/124722515_p2.png" alt="Integrante 1" class="circular-image">
+            <div class="member-info">
+                <h3>Cesar Gavilano (CEO)</h3>
+                <p>"404 not found"</p>
+            </div>
+            <br>
+            <div class="vidi" id="reproductor1">
+                    <video class="vidi-video" id="video1" width="420" height="240" controls></video>
+                    <button class="vidi-video-botones" onclick="prevVideo1()">Anterior</button>
+                    <script>var videos1 = ['media/Ella una señorita bella  GIMS Maluma  Hola Señorita Maria Letra  4K AMV_360p.mp4', 
+                                           'media/ciudad magica -  tan biónica  (letra).mp4', 
+                                           'media/Oliver Heldens  WeiBird  Out Of Love_360p.mp4',
+                                           'media/What took you so long  Marine Visual_720pFHR.mp4', 
+                                           'media/DJ BLYATMAN  LOVE FATALITY feat Одолжи Юность Official Music Video_360p.mp4', 
+                                           'media/FASTER N HARDER_720pFHR.mp4', 
+                                           'media/モエチャッカファイア  弌誠MUSIC VIDEO_720pHF.mp4', 
+                                           'media/GALOPA KAGUYA-SAMA AMV.mp4', 
+                                           'media/Ludmilla - Hoje [Áudio Oficial].mp4', 
+                                           'media/Léo Santana  Anitta  Contatinho audio_v720P.mp4' ]; 
+                        var playing1 = false;
+                        function playPauseVideo1() { if (playing1) { document.getElementById('video1').pause(); playing1 = false;} 
+                        else { document.getElementById('video1').play(); playing1 = true; }}
+                        var indice1 = 0; document.getElementById('video1').src = videos1[indice1]; 
+                        function prevVideo1() { indice1--; if (indice1 < 0) indice1 = videos1.length - 1; document.getElementById('video1').src = videos1[indice1]; document.getElementById('video1').play();} 
+                        function nextVideo1() { indice1++; if (indice1 >= videos1.length) indice1 = 0; document.getElementById('video1').src = videos1[indice1]; document.getElementById('video1').play();}
+                    </script>
+                    <button class="vidi-video-botones" onclick="playPauseVideo1()"> II / O</button>
+                    <button class="vidi-video-botones" onclick="nextVideo1()">Siguiente</button>
+                </div>
+            <br>
+        </div>
+
+        <div class="team-member aaron">
+            <img src="img/Icons%20User/aaron.jpg" alt="Integrante 2" class="circular-image">
+            <div class="member-info">
+                <h3>Aaron Fernandez</h3>
+                <p>"Real hasta la muerte brrr"</p>
+                <!--<a class="linkmusic" href="https://youtu.be/oeBcGjlGB7I" target="_blank">                            
+                    <p>Mi lista de Musica</p>
+                </a>-->
+            </div>
+            <br>
+            <div class="vidi" id="reproductor2">
+                    <video class="vidi-video" id="video2" width="420" height="240" controls></video>
+                    <button class="vidi-video-botones" onclick="prevVideo2()">Anterior</button>
+                    <script>
+                        var videos2 = ['media/Imagine Dragons - Demons (Official Music Video).mp4'];
+                        var playing2 = false;
+                        function playPauseVideo2() { if (playing2) { document.getElementById('video2').pause(); playing2 = false;} 
+                        else { document.getElementById('video2').play(); playing2 = true; }}
+                        var indice2 = 0;
+                        document.getElementById('video2').src = videos2[indice2];
+                        function prevVideo2() { indice2--; if (indice2 < 0) indice2 = videos2.length - 1; document.getElementById('video2').src = videos2[indice2]; document.getElementById('video2').play(); }
+                        function nextVideo2() { indice2++; if (indice2 >= videos2.length) indice2 = 0; document.getElementById('video2').src = videos2[indice2]; document.getElementById('video2').play(); }
+                    </script>
+                    <button class="vidi-video-botones" onclick="playPauseVideo2()"> II / O</button>
+                    <button class="vidi-video-botones" onclick="nextVideo2()">Siguiente</button>
+            </div>
+            <br>
+        </div>
+        
+        <div class="team-member paul">
+            <img src="img/Icons%20User/paul.jpg" alt="Integrante 3" class="circular-image">
+            <div class="member-info">
+                <h3>Paul Ramos</h3>
+                <p>"Desde chiquito"</p>
+                <!--<a class="linkmusic" href="https://youtu.be/WdwfX2T443E" target="_blank">                            
+                    <p>Mi lista de Musica</p>
+                </a>-->
+            </div>
+            <br>
+            <div class="vidi" id="reproductor3">
+                    <video class="vidi-video" id="video3" width="420" height="240" controls></video>
+                    <button class="vidi-video-botones" onclick="prevVideo3()">Anterior</button>
+                    <script>
+                        var videos3 = ['media/Gera Mxm 03.- Dando vuelta..mp4', 
+                                       'media/DAMELO.mp4', 
+                                       'media/TARDES.mp4'];
+                        var playing3 = false;
+                        function playPauseVideo3() { if (playing3) { document.getElementById('video3').pause(); playing3 = false;} 
+                        else { document.getElementById('video3').play(); playing3 = true; }}
+                        var indice3 = 0; document.getElementById('video3').src = videos3[indice3];
+                        function prevVideo3() { indice3--; if (indice3 < 0) indice3 = videos3.length - 1; document.getElementById('video3').src = videos3[indice3]; document.getElementById('video3').play(); }
+                        function nextVideo3() { indice3++; if (indice3 >= videos3.length) indice3 = 0; document.getElementById('video3').src = videos3[indice3]; document.getElementById('video3').play(); }
+                    </script>
+                    <button class="vidi-video-botones" onclick="playPauseVideo3()"> II / O</button>
+                    <button class="vidi-video-botones" onclick="nextVideo3()">Siguiente</button>
+            </div>
+            <br>
+        </div>
+        
+        <div class="team-member jesus">
+            <img src="img/Icons%20User/jesus2.jpg" alt="Integrante 4" class="circular-image">
+            <div class="member-info">
+                <h3>Jesus Tenorio</h3>
+                <p>"Ya tu Samsung"</p>
+                <!--<a class="linkmusic" href="https://youtu.be/A_fCv76c4uQ" target="_blank">                            
+                    <p>Mi lista de Musica</p>
+                </a>-->
+            </div>
+            <br>
+            <div class="vidi" id="reproductor4">
+                    <video class="vidi-video" id="video4" width="420" height="240" controls></video>
+                    <button class="vidi-video-botones" onclick="prevVideo4()">Anterior</button>
+                    <script>
+                        var videos4 = ['media/Cafuné - Tek It (I Watch The Moon) [Official Video].mp4'];
+                        var playing4 = false;
+                        function playPauseVideo4() { if (playing4) { document.getElementById('video4').pause(); playing4 = false;} 
+                        else { document.getElementById('video4').play(); playing4 = true; }}
+                        var indice4 = 0; document.getElementById('video4').src = videos4[indice4];
+                        function prevVideo4() { indice4--; if (indice4 < 0) indice4 = videos4.length - 1; document.getElementById('video4').src = videos4[indice4]; document.getElementById('video4').play(); }
+                        function nextVideo4() { indice4++; if (indice4 >= videos4.length) indice4 = 0; document.getElementById('video4').src = videos4[indice4]; document.getElementById('video4').play(); }
+                    </script>
+                    <button class="vidi-video-botones" onclick="playPauseVideo4()"> II / O</button>
+                    <button class="vidi-video-botones" onclick="nextVideo4()">Siguiente</button>
+            </div>
+            <br>
+        </div>
+        
+        <div class="team-member ruben">
+            <img src="img/Icons%20User/ruben.jpg" alt="Integrante 6" class="circular-image">
+            <div class="member-info">
+                <h3>Ruben Quintanilla</h3>
+                <p>"Cuchao"</p>
+                <!--<a class="linkmusic" href="https://youtu.be/3hpGeucGTh0" target="_blank">                            
+                    <p>Mi lista de Musica</p>
+                </a>-->
+            </div>
+            <br>
+            <div class="vidi" id="reproductor5">
+                    <video class="vidi-video" id="video5" width="420" height="240" controls></video>
+                    <button class="vidi-video-botones" onclick="prevVideo5()">Anterior</button>
+                    <script>
+                        var playing5 = false;
+                        function playPauseVideo5() { if (playing5) { document.getElementById('video5').pause(); playing5 = false;} 
+                        else { document.getElementById('video5').play(); playing5 = true; }}
+                        var videos5 = ['media/CRO RUINAS.mp4'];
+                        var indice5 = 0; document.getElementById('video5').src = videos5[indice5];
+                        function prevVideo5() { indice5--; if (indice5 < 0) indice5 = videos5.length - 1; document.getElementById('video5').src = videos5[indice5]; document.getElementById('video5').play(); }
+                        function nextVideo5() { indice5++; if (indice5 >= videos5.length) indice5 = 0; document.getElementById('video5').src = videos5[indice5]; document.getElementById('video5').play(); }
+                    </script>
+                    <button class="vidi-video-botones" onclick="playPauseVideo5()"> II / O</button>
+                    <button class="vidi-video-botones" onclick="nextVideo5()">Siguiente</button>
+            </div>
+            <br>
+        </div>
+            
+        </div>
+    </main>    
+        
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <footer class="footer">
+            <div class="uni">
+                <div  class="users">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="nombre">Aaron Isai Fernández de la cruz</p>
+                    <span>|</span>
+                    <a class="email" href="mailto:aaron.fernandez@upsjb.edu.pe">aaron.fernandez@upsjb.edu.pe</a>
+                    
+                    <i class="fa-solid fa-user"></i>
+                    <p class="nombre">Cesar Augusto Gavilano Falla (CEO)</p>
+                    <span>|</span>
+                    <a class="email" href="mailto:cesar.gavilano@upsjb.edu.pe">cesar.gavilano@upsjb.edu.pe</a>
+                    
+                    <i class="fa-solid fa-user"></i>
+                    <p class="nombre">Jesus Alexander Tenorio Gamonal</p>
+                    <span>|</span>
+                    <a class="email" href="mailto:jesus.tenorio@upsjb.edu.pe">jesus.tenorio@upsjb.edu.pe</a>
+                    
+                    <i class="fa-solid fa-user"></i>
+                    <p class="nombre">Ramos Alarcon Paul Fabricio</p>
+                    <span>|</span>
+                    <a class="email" href="mailto:paulf.ramos@upsjb.edu.pe">paulf.ramos@upsjb.edu.pe</a>
+                    
+                    <i class="fa-solid fa-user"></i>
+                    <p class="nombre">Rubén Yholino Quintanilla Ochoa </p>
+                    <span>|</span>
+                    <a class="email" href="mailto:rubén.quintanilla@upsjb.edu.pe">rubén.quintanilla@upsjb.edu.pe</a>
+        
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p class="nombre">Ing. Estefany Almendra Urday Escobar</p>
+                    <span>|</span>
+                    <a class="email" href="mailto:estefany.urday@upsjb.edu.pe">estefany.urday@upsjb.edu.pe</a>
+                </div>
+                <div class="sjb">
+                    <img class="logo-u" src="img/sjb.png" alt="logo-u">
+                    <div class="igua">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <p>III ciclo - MA</p>
+                        <i></i>
+                        <p>Fisica II</p>
+                        <i></i>
+                        <p>Ingeniería de Computación y Sistemas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="derechos">Copyright © 2024 | Todos los Derechos Reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
